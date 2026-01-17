@@ -43,23 +43,9 @@ ENV/
 data/val2017/val2017/*.jpg
 data/annotations_trainval2017/
 
-# Models (large files)
-*.pt
-*.onnx
-models/*.pt
-models/*.onnx
-
 # Ultralytics cache
 runs/
 *.cache
-
-# Results
-results/
-results_*/
-*.csv
-*.json
-plots/
-visualization_samples/
 
 # OS
 .DS_Store
