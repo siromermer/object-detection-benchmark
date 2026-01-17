@@ -1,0 +1,54 @@
+# Benchmark configuration file
+
+# Model settings
+model:
+  name: "yolov8n"
+  path: "models/yolov8n.pt"
+  onnx_path: "models/yolov8n.onnx"
+
+# Dataset settings
+dataset:
+  images_dir: "data/coco_subset/images"
+  annotations_file: "data/coco_subset/annotations/instances_val2017_subset.json"
+  num_images: 500
+
+# Inference settings
+inference:
+  conf_threshold: 0.25
+  iou_threshold: 0.7
+  
+# Benchmark configurations to test
+configurations:
+  - name: "pytorch_640"
+    backend: "pytorch"
+    imgsz: 640
+    
+  - name: "onnx_640"
+    backend: "onnx"
+    imgsz: 640
+    
+  - name: "pytorch_320"
+    backend: "pytorch"
+    imgsz: 320
+    
+  - name: "onnx_320"
+    backend: "onnx"
+    imgsz: 320
+
+# Benchmarking settings
+benchmark:
+  warmup_runs: 3
+  measurement_runs: 10
+
+# Parity check settings
+parity:
+  bbox_tolerance: 0.05  # Tolerance for bounding box coordinates (5% relative difference)
+  conf_tolerance: 0.15  # Tolerance for confidence scores (15% absolute difference)
+  iou_threshold: 0.5    # IoU threshold for matching detections
+
+# Output settings
+output:
+  results_dir: "results"
+  save_predictions: true
+  save_visualizations: true
+  max_visualizations: 10

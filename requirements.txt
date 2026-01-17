@@ -1,0 +1,25 @@
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# Data handling
+numpy>=1.24.0
+pillow>=9.5.0
+opencv-python>=4.8.0
+
+# Evaluation metrics
+pycocotools>=2.0.6
+
+# Visualization and reporting
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pandas>=2.0.0
+
+# Configuration management
+pyyaml>=6.0
+
+# Progress bars
+tqdm>=4.65.0
