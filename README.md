@@ -197,3 +197,45 @@ cat results/metrics.csv
 cat results/latency.csv
 open results/plots/latency_comparison.png  # or start on Windows
 ```
+
+---
+
+## Visualizations
+
+### Latency Comparison
+<p align="center">
+  <img src="results/plots/latency_comparison_final.png" alt="Latency Comparison" width="700">
+</p>
+
+### Throughput Comparison
+<p align="center">
+  <img src="results/plots/throughput_comparison_final.png" alt="Throughput Comparison" width="700">
+</p>
+
+### Accuracy Comparison
+<p align="center">
+  <img src="results/plots/accuracy_comparison_final.png" alt="Accuracy Comparison" width="700">
+</p>
+
+### Accuracy-Latency Tradeoff
+<p align="center">
+  <img src="results/plots/tradeoff_analysis_final.png" alt="Tradeoff Analysis" width="700">
+</p>
+
+### Parity Check: Detection Counts
+<p align="center">
+  <img src="results/plots/parity_detection_counts.png" alt="Parity Detection Counts" width="700">
+</p>
+
+### Latency Distributions
+
+<p align="center">
+  <img src="results/plots/latency_distribution_pytorch_640.png" alt="PyTorch 640 Distribution" width="350">
+  <img src="results/plots/latency_distribution_onnx_640.png" alt="ONNX 640 Distribution" width="350">
+</p>
+
+<p align="center">
+  <img src="results/plots/latency_distribution_pytorch_320.png" alt="PyTorch 320 Distribution" width="350">
+  <img src="results/plots/latency_distribution_onnx_320.png" alt="ONNX 320 Distribution" width="350">
+</p>
+
