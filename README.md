@@ -25,7 +25,7 @@
 ## Benchmark Pipeline
 
 <p align="center">
-  <img src="chart.png" alt="Benchmark Pipeline" width="600">
+  <img src="chart.png" alt="Benchmark Pipeline" width="800">
 </p>
 
 ---
@@ -196,16 +196,4 @@ python run_all_benchmarks.py
 cat results/metrics.csv
 cat results/latency.csv
 open results/plots/latency_comparison.png  # or start on Windows
-```
-
----
-
-## Citation
-
-```bibtex
-@software{yolov8n_benchmark,
-  title={YOLOv8n Benchmark: PyTorch vs ONNX},
-  author={trio-demo},
-  year={2026}
-}
 ```
