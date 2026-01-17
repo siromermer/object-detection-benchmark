@@ -7,6 +7,15 @@
 - **3.9× speedup** at 320×320 (ONNX vs PyTorch)
 - Minimal accuracy loss: only 1.2% at 640×640
 - ONNX actually **beats** PyTorch at 320×320
+---
+
+## Benchmark Pipeline
+
+<p align="center">
+  <img src="chart.png" alt="Benchmark Pipeline" width="800">
+</p>
+
+---
 
 ## Model & Dataset
 
@@ -19,16 +28,6 @@
 - 500 images (seed=42)
 - 3,842 object instances
 - 80 object categories
-
----
-
-## Benchmark Pipeline
-
-<p align="center">
-  <img src="chart.png" alt="Benchmark Pipeline" width="800">
-</p>
-
----
 
 ## Benchmark Results
 
